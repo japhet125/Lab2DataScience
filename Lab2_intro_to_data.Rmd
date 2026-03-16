@@ -19,6 +19,8 @@ editor_options:
 knitr::opts_chunk$set(eval = TRUE, message = FALSE, warning = FALSE)
 library(tidyverse)
 library(openintro)
+#install.packages("tinytex")
+#tinytex::install_tinytex()
 ```
 
 Some define statistics as the field that focuses on turning information into knowledge. The first step in that process is to summarize and describe the raw information -- the data. In this lab we explore flights, specifically a random sample of domestic flights that departed from the three major New York City airports in 2013. We will generate simple graphical and numerical summaries of data on these flights and explore delay times. Since this is a large data set, along the way you'll also learn the indispensable skills of data processing and subsetting.
@@ -181,7 +183,7 @@ Note that each of these functions takes a single vector as an argument and retur
 
 You can also filter based on multiple criteria. Suppose you are interested in flights headed to San Francisco (SFO) in February:
 
-```{r sfo-feb-flights}
+```{r sfo-feb-flights -1}
 sfo_feb_flights <- nycflights %>%
   filter(dest == "SFO", month == 2)
 sfo_feb_flights

@@ -2,7 +2,7 @@
 title: "Probability"
 author: "Guibril Ramde"
 output:
- # pdf_document: default
+  pdf_document: default
   html_document:
     includes:
       in_header: header.html
