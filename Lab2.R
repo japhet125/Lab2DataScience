@@ -1,5 +1,5 @@
 library(DATA606)
 getLabs() # This will list all the labs available
-startLab('Lab5b')
+startLab('Lab8')
 
 
